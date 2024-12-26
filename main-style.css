@@ -2,3 +2,14 @@
 {
     min-height: 100vh;
 }
+
+.navbar
+{
+    box-shadow: 0px 0px 15px #0008;
+}
+
+.background-gradient
+{
+    background-image: linear-gradient(to bottom, #17a2b8, #2a7985);
+    margin-top: 75px;
+}
