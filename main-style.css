@@ -13,3 +13,15 @@
     background-image: linear-gradient(to bottom, #17a2b8, #2a7985);
     margin-top: 75px;
 }
+.footer{
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;    
+}
+.footer>a{
+    text-decoration: none;
+    color: white;
+    padding-right: 5px;
+
+}
