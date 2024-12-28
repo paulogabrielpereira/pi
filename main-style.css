@@ -8,18 +8,32 @@
     box-shadow: 0px 0px 15px #0008;
 }
 
+.nav-link:hover
+{
+    text-decoration: underline;
+}
+
+.nav-link.rounded:hover
+{
+    text-decoration: none;
+}
+
 .background-gradient
 {
     background-image: linear-gradient(to bottom, #17a2b8, #2a7985);
     margin-top: 75px;
 }
-.footer{
+
+.footer
+{
     color: white;
     background-color: black;
     width: 100%;
     padding: 10px 0;    
 }
-.footer>a{
+
+.footer>a
+{
     text-decoration: none;
     color: white;
     padding-right: 5px;
