@@ -3186,5 +3186,22 @@
         "Referencias": "Referências: ",
         "Fonte": "https://brasilescola.uol.com.br/quimica/oganessonio-og.htm https://ptable.com/?lang=pt#Propriedades/Write-up"
       }                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    ],
+
+    "modelos_atomicos":[
+      {
+        "nome":"bola de bilhar",
+        "autor": "John Dalton",
+        "ano de descoberta": "1808",
+        "historia da descoberta":"John Dalton, em 1803, começou a desenvolver esse modelo atômico a partir de observações e experimentos sobre os gases e suas propriedades",
+        "mudancas": null
+      },
+      {
+        "nome": "pudim de passas",
+        "autor": "Joseph John Thomson",
+        "ano de descoberta":"1898",
+        "historia da descoberta": "a partir de experimentos, Thomson começou a perceber que o átomo possuía estrutura interna,e assim, ele começou a desenvolver experimentos que provaram a existência",
+        "mudancas": "Esse modelo apresentou mudanças na estrutura do átomo, trazendo elétrons,  " 
+      }
     ]
   }
