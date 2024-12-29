@@ -18,6 +18,14 @@
     text-decoration: none;
 }
 
+.element-data>.symbol,
+.element-data>.number,
+.element-data>.name,
+.element-data>.mass
+{
+    display: block;
+}
+
 .background-gradient
 {
     background-image: linear-gradient(to bottom, #17a2b8, #2a7985);
