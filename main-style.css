@@ -58,3 +58,88 @@ img{
     width: 300px;
     padding-bottom: 25px;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: 20px;
+}
+
+
+.table-num {
+    
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 0 0 5px  black;
+}
+
+.element-data {
+    background-color: #2a2a2a;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    border: 1px solid #444;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.element-data:hover {
+    background-color: #0072ff;
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.element-data .symbol {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.element-data .name {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.element-data .mass {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/*classes com as cores dos grupos de elementos*/
+.metais-alcalinos {
+    background-color: rgb(255, 85, 107);
+}
+
+.metais-alcalinos-terrosos {
+    background-color: rgb(255, 255, 0);
+}
+
+.metais-de-transicao {
+    background-color: rgb(255, 145, 0);
+}
+
+.ametais {
+    background-color: rgb(0, 116, 39);
+}
+
+.semimetais {
+    background-color: rgb(52, 73, 28);
+}
+
+.metais-representativos {
+    background-color: rgb(153, 152, 152);
+}
+
+.gases-nobres {
+    background-color: rgb(12, 137, 255);
+}
+
+.latanídios {
+    background-color: rgb(253, 81, 110);
+}
+.actinídios {
+    background-color: rgb(123, 53, 170);
+}
