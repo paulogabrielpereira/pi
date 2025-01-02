@@ -77,7 +77,6 @@ table {
 }
 
 .element-data {
-    background-color: #2a2a2a;
     text-align: center;
     padding: 10px;
     color: black;
@@ -202,11 +201,11 @@ table {
     }
 }
 
-.latanidios {
+.lantanideos {
     background-color: rgb(253, 81, 110);
 }
 
 
-.actinidios {
+.actinideos {
     background-color: rgb(123, 53, 170);
 }
