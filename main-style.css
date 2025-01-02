@@ -49,17 +49,23 @@
     padding-right: 5px;
 
 }
-p{
+
+p
+{
     width: 55%;
     text-align: justify;
     font-size: 22px;
 
 }
-img{
+
+img
+{
     width: 300px;
     padding-bottom: 25px;
 }
-table {
+
+table 
+{
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
@@ -67,8 +73,8 @@ table {
 }
 
 
-.table-num {
-    
+.table-num 
+{
     text-align: center;
     padding: 10px;
     font-size: 16px;
@@ -77,7 +83,6 @@ table {
 }
 
 .element-data {
-    text-align: center;
     padding: 10px;
     color: black;
     border: 1px solid #444;
@@ -85,6 +90,7 @@ table {
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s ease, color 0.3s ease;
     overflow: hidden;
+    min-width: 60px;
 }
 
 .element-data:hover {
@@ -150,11 +156,11 @@ table {
 
 .halogenios
 {
-    background-color: rgb(154, 54, 86);
+    background-color: rgb(27, 153, 172);
 
     &:hover
     {
-        background-color: rgb(77, 27, 43);
+        background-color: rgb(13.5, 76.5, 86);
     }
 }
 
@@ -202,10 +208,20 @@ table {
 }
 
 .lantanideos {
-    background-color: rgb(253, 81, 110);
+    background-color: rgb(154, 54, 86);
+
+    &:hover
+    {
+        background-color: rgb(77, 27, 43);
+    }
 }
 
 
 .actinideos {
     background-color: rgb(123, 53, 170);
+
+    &:hover
+    {
+        background-color: rgb(61.5, 26.5, 85);
+    }
 }
