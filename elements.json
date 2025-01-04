@@ -3188,23 +3188,23 @@
       }                                                                                                                                                                                                                                                                                                                                                                                                                                             
     ],
 
-    "modelos_atomicos":[
+    "modelos_atomicos": [
       {
-        "nome":"bola de bilhar",
+        "nome":"Bola de bilhar",
         "autor": "John Dalton",
         "ano de descoberta": "1808",
         "descricao":"John Dalton, em 1803, começou a desenvolver esse modelo atômico a partir de observações e experimentos sobre os gases e suas propriedades",
         "mudancas": null
       },
       {
-        "nome": "pudim de passas",
+        "nome": "Pudim de passas",
         "autor": "Joseph John Thomson",
         "ano de descoberta":"1898",
         "descricao": "a partir de experimentos, Thomson começou a perceber que o átomo possuía estrutura interna,e assim, ele começou a desenvolver experimentos que provaram a existência de partículas carregadas negativamente, defendendo que essas partículas estavam presas em um núcleo com carga elétrica positiva.",
         "mudancas": "Esse modelo apresentou mudanças na estrutura do átomo, pois agora o átomo era composto por um núcleo de carga elétrica positiva, com partículas negativas encrustadas nesse núcleo, caracterizando o átomo como divisível." 
       },
       {
-        "nome": "modelo do sistema planetário",
+        "nome": "Modelo do sistema planetário",
         "autor": "Ernest Rutherford",
         "ano de descoberta": "1911",
         "descricao": "O modelo de Rutherford afirma que o átomo é formado por uma região central de massa elevada e com caráter elétrico positivo. Ao redor dessa região, há uma outra região de massa desprezível onde orbitam os elétrons. Essa região se chama eletosfera, que possui baixa densidade se comparada ao núcleo, região central do átomo.",
