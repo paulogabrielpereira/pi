@@ -3193,15 +3193,29 @@
         "nome":"bola de bilhar",
         "autor": "John Dalton",
         "ano de descoberta": "1808",
-        "historia da descoberta":"John Dalton, em 1803, começou a desenvolver esse modelo atômico a partir de observações e experimentos sobre os gases e suas propriedades",
+        "descricao":"John Dalton, em 1803, começou a desenvolver esse modelo atômico a partir de observações e experimentos sobre os gases e suas propriedades",
         "mudancas": null
       },
       {
         "nome": "pudim de passas",
         "autor": "Joseph John Thomson",
         "ano de descoberta":"1898",
-        "historia da descoberta": "a partir de experimentos, Thomson começou a perceber que o átomo possuía estrutura interna,e assim, ele começou a desenvolver experimentos que provaram a existência",
-        "mudancas": "Esse modelo apresentou mudanças na estrutura do átomo, trazendo elétrons,  " 
+        "descricao": "a partir de experimentos, Thomson começou a perceber que o átomo possuía estrutura interna,e assim, ele começou a desenvolver experimentos que provaram a existência de partículas carregadas negativamente, defendendo que essas partículas estavam presas em um núcleo com carga elétrica positiva.",
+        "mudancas": "Esse modelo apresentou mudanças na estrutura do átomo, pois agora o átomo era composto por um núcleo de carga elétrica positiva, com partículas negativas encrustadas nesse núcleo, caracterizando o átomo como divisível." 
+      },
+      {
+        "nome": "modelo do sistema planetário",
+        "autor": "Ernest Rutherford",
+        "ano de descoberta": "1911",
+        "descricao": "O modelo de Rutherford afirma que o átomo é formado por uma região central de massa elevada e com caráter elétrico positivo. Ao redor dessa região, há uma outra região de massa desprezível onde orbitam os elétrons. Essa região se chama eletosfera, que possui baixa densidade se comparada ao núcleo, região central do átomo.",
+        "mudancas": "a principal mudança em relação ao modelo de Thomson é a movimentação dos elétrons, que ocorre pelo novo conceito de eletrosfera. Essa movimentação dos elétrons ocorre em órbitas circulares ao redor do núcleo."
+      },
+      {
+        "nome": "Rutherford-Bohr",
+        "autor": "Niels Bohr",
+        "ano de descoberta": "1913",
+        "descricao": "Esse modelo é uma evolução do modelo de Rutherford e resolve uma de suas falhas, que trata da estabilidade dos átomos. No modelo de Bohr, os elétrons ocupam camadas eletrônicas com valores pré-definidos de energia, de forma que a energia do elétron em uma camada se mantém constante ao longo de sua movimentação. Dessa forma, esse modelo explica como o átomo pode variar sua energia, por meio de absorção ou liberação da diferença de energia existente entre duas camadas.",
+        "mudancas": "o Modelo de Bohr, diferente do de Rutherford conseguiu explicar os espectros atômicos como resultado de transições de elétrons entre níveis de energia. Além disso, ele também introduz a ideia de níveis de energia discretos que garantem a estabilidade do átomo, o que faltava no modelo de Rutherford que não conseguia explicar o poruqe dos elétrons não colapsarem no núcleo. "
       }
     ]
   }
