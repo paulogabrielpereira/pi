@@ -3216,6 +3216,13 @@
         "ano de descoberta": "1913",
         "descricao": "Esse modelo é uma evolução do modelo de Rutherford e resolve uma de suas falhas, que trata da estabilidade dos átomos. No modelo de Bohr, os elétrons ocupam camadas eletrônicas com valores pré-definidos de energia, de forma que a energia do elétron em uma camada se mantém constante ao longo de sua movimentação. Dessa forma, esse modelo explica como o átomo pode variar sua energia, por meio de absorção ou liberação da diferença de energia existente entre duas camadas.",
         "mudancas": "o Modelo de Bohr, diferente do de Rutherford conseguiu explicar os espectros atômicos como resultado de transições de elétrons entre níveis de energia. Além disso, ele também introduz a ideia de níveis de energia discretos que garantem a estabilidade do átomo, o que faltava no modelo de Rutherford que não conseguia explicar o poruqe dos elétrons não colapsarem no núcleo. "
+      },
+      {
+        "nome": "modelo de Schrödinger",
+        "autor":"Erwin Schrödinger",
+        "ano de descoberta": "1926",
+        "descricao": "Esse modelo reúne ideias propostas na época, dizendo que a eletrosfera não é formada por órbitas de trajetória determinada, mas sim por regiões que se assemelham a nuvens eletrônicas. Esse modelo inseriu o conceito de orbital atõmico, que é dito como uma região de alta probabilidade de se encontrar elétrons e que é definida através de uma equação conhecida como função de onda.",
+        "mudancas" : "A partir desse modelo, a visão comportalmental dos elétrons mudou, já que Schrödinger introduziu a ideia de orbitais (densidade de probabilidade), além de tratar eles como partículas e ondas simultaneamente, através da função de onda. Ele também introduz conceitos como interações entre partículas."
       }
     ]
   }
