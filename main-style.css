@@ -34,12 +34,11 @@
 
 .footer
 {
-    color: white;
-    background-color: black;
     width: 100%;
-    padding: 10px 0;
-    margin-top: 1.5em;; 
+    padding: 15px;
+    margin-top: 1.5em;
     height: 50px;
+    box-shadow: 0px 0px 15px #0008;
 }
 
 .footer>a
@@ -75,7 +74,6 @@ table
 th, td {
     border: 1px solid #ccc;
     text-align: center;
-    padding: 10px;
     position: relative;
   }
 
@@ -113,13 +111,12 @@ iframe {
 }
 
 .element-data {
-    padding: 10px;
+    padding: 5px;
     color: black;
     border: 1px solid #444;
     position: relative;
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s ease, color 0.3s ease;
-    min-width: 60px;
 }
 
 .element-data:hover {
@@ -139,7 +136,7 @@ iframe {
 }
 
 .element-data .name {
-    font-size: 14px;
+    font-size: 10px;
     margin-top: 5px;
 }
 
