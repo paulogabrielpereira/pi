@@ -132,6 +132,17 @@ iframe {
     transition: transform 0.2s, background-color 0.3s ease, color 0.3s ease;
 }
 
+.element-data a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.element-data a span{
+    display: block;
+    text-align: center;
+}
+
 .element-data:hover {
     transform: scale(1.1);
     z-index: 10;

@@ -18,3 +18,32 @@ elementNodes.map((el) => {
             })
     })
 })
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const tabela = document.getElementById("tabelaPeriodica");
+
+    tabela.addEventListener("click", function(event) {
+        const elementoClicado = event.target.closest(".element-data");
+
+        console.log("Elemento clicado:", elementoClicado); // Verifique se está capturando o elemento correto
+
+        if (elementoClicado) {
+            const numeroAtomicoElement = elementoClicado.querySelector(".number");
+
+            console.log("Número atômico encontrado:", numeroAtomicoElement); // Verifique se o número atômico foi encontrado
+
+            if (numeroAtomicoElement) {
+                const numeroAtomico = numeroAtomicoElement.textContent;
+                console.log("Número atômico:", numeroAtomico);
+
+                const params = new URLSearchParams();
+                params.set('numero', numeroAtomico);
+
+                window.location.href = `elementos/elements.html?${params.toString()}`;
+            } else {
+                console.error("Número atômico não encontrado.");
+            }
+        }
+    });
+});
