@@ -37,25 +37,9 @@ document.addEventListener("DOMContentLoaded", function (){
             window.location.href = `elementos/elements.html?${params.toString()}`;
 
         }else{
-            console.error("Erro: nenhum elemento com .elemt-data foi clicado.");
+            console.error("Erro: nenhum elemento com .element-data foi clicado.");
             return;
         }
-
-        const numeroSpan = elementoClicado.querySelector(".number");
-        console.log("Elemento .number encontrado: ",numeroSpan);
-
-        if(!numeroSpan){
-            console.error("Erro: O elemento .number não foi encontrado dentro do elemento");
-            return;
-        }
-
-        const numeroAtomico = numeroSpan.textContent;
-        console.log("Numero atomico capturado: ", numeroAtomico);
-
-        const params = new URLSearchParams();
-        params.set("numero", numeroAtomico);
-        window.location.href = `elementos/elements.html?${params.toString()}`;
-
     });
 });
 
