@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-        const resposta = await fetch("../elements.json");  // Certifique-se do caminho correto
+        const resposta = await fetch("../elements.json");  
         const jsonData = await resposta.json();
 
         console.log("JSON carregado:", jsonData);
