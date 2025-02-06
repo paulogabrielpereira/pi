@@ -40,7 +40,25 @@ function preencherPagina(elemento) {
     document.getElementById("simbolo").textContent = elemento["Nome do elemento"].split(" ")[1] || "N/A";
     document.getElementById("numeroAtomico").textContent = elemento.num || "N/A";
     document.getElementById("massaAtomica").textContent = elemento["Massa atômica"] || "N/A";
+    document.getElementById("distElet").textContent = elemento["Distribuição eletrônica"];
     document.getElementById("familia").textContent = elemento["Família"] || "N/A";
+    document.getElementById("serieQuimica").textContent = elemento["Série química"];
     document.getElementById("pontoFusao").textContent = elemento["Ponto de fusão"] || "N/A";
     document.getElementById("pontoEbulicao").textContent = elemento["Ponto de ebulição"] || "N/A";
+    document.getElementById("densidade").textContent = elemento["Densidade"];
+
+    const descoberta = elemento["Descoberta"];
+    const partes = descoberta.match(/^(.*)\s*\(([\d e]+)\)$/);
+
+    if(partes){
+        const autor = partes[1];
+        const ano = partes[2];
+
+        document.getElementById("autor").textContent = autor;
+        document.getElementById("dataDescoberta").textContent = ano;
+    }else{
+        console.error("Formato inesperado no campo Descoberta: ",descoberta);
+    }
+
+    document.getElementById("historia").textContent = elemento["Texto2"] +  elemento["Texto3"]
 }
