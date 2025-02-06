@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 });
 
+<<<<<<< Updated upstream
 function preencherPagina(elemento) {
     document.getElementById("simbolo").textContent = elemento["Nome do elemento"].split(" ")[1] || "N/A";
     document.getElementById("numeroAtomico").textContent = elemento.num || "N/A";
@@ -62,3 +63,31 @@ function preencherPagina(elemento) {
 
     document.getElementById("historia").textContent = elemento["Texto2"] +  elemento["Texto3"]
 }
+=======
+document.addEventListener("DOMContentLoaded", function (){
+    const tabela = document.getElementById("tabelaPeriodica");
+
+    tabela.addEventListener("click", function(event){
+        const elementoClicado = event.target.closest(".element-data");
+
+        if(elementoClicado){
+            const numeroAtomico = elementoClicado.querySelector(".number").textContent;
+
+            const params = new URLSearchParams();
+            params.set('numero',numeroAtomico);
+
+            window.location.href = `elementos/elements.html?${params.toString()}`;
+        }
+    });
+});
+
+
+function preencherPagina(elemento){
+    document.getElementById("simbolo").textContent = elemento["Nome do elemento"].split(" ")[1];
+    document.getElementById("numeroAtomico").textContent = elemento.num;
+    document.getElementById("massaAtomica").textContent = elemento["Massa atômica"];
+    document.getElementById("familia").textContent = elemento["Família"];
+    document.getElementById("pontoFusao").textContent = elemento["Ponto de fusão"];
+    document.getElementById("pontoEbulicao").textContent = elemento["Ponto de ebulição"];
+}
+>>>>>>> Stashed changes
