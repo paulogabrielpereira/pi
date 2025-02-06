@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     try {
-        const resposta = await fetch("../elements.json");  
+        const resposta = await fetch("../elements.json");
         const jsonData = await resposta.json();
 
         console.log("JSON carregado:", jsonData);
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 function preencherPagina(elemento) {
-    document.getElementById("simbolo").textContent = elemento["Nome do elemento"].split(" ")[1] || "N/A";
+    document.getElementById("simbolo").textContent = elemento["Nome do elemento"].split(/[() ]/)[2] || "N/A";
     document.getElementById("numeroAtomico").textContent = elemento.num || "N/A";
     document.getElementById("massaAtomica").textContent = elemento["Massa atômica"] || "N/A";
     document.getElementById("distElet").textContent = elemento["Distribuição eletrônica"];
@@ -54,8 +54,8 @@ function preencherPagina(elemento) {
         const autor = partes[1];
         const ano = partes[2];
 
-        document.getElementById("autor").textContent = autor;
-        document.getElementById("dataDescoberta").textContent = ano;
+        document.getElementById("autor").textContent = autor || "N/A";
+        document.getElementById("dataDescoberta").textContent = ano || "N/A";
     }else{
         console.error("Formato inesperado no campo Descoberta: ",descoberta);
     }
