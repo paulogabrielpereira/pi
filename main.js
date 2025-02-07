@@ -10,45 +10,29 @@ document.addEventListener("DOMContentLoaded", function (){
             params.set('numero',numeroAtomico);
 
             window.location.href = `elementos/elements.html?${params.toString()}`;
-
         }
     });
 
     tabela.addEventListener("mouseover", function(event){ // Dinamiza os dados dos iframes para cada elemento
 
         const elementoSelecionado = event.target.closest(".element-data");
+        const iframeSelecionado = elementoSelecionado.lastElementChild.firstElementChild;
 
-        const lastChild = elementoSelecionado.lastElementChild;
-        if (lastChild && lastChild.tagName.toLowerCase() === 'div') {
-            lastChild.remove();
-        }
+        const iframeDoc = iframeSelecionado.contentDocument || iframeSelecionado.contentWindow.document;
+        const script = iframeDoc.createElement("script");
+        const params = new URLSearchParams();
 
-        const divIframe = document.createElement('div');
-        divIframe.classList.add('iframe_container');
+        params.set('numero', elementoSelecionado.firstElementChild.textContent);
+        iframeSelecionado.contentWindow.postMessage({numero: elementoSelecionado.firstElementChild.textContent}, '*')
+        iframeDoc.body.appendChild(script);
 
-        const iframeElement = document.createElement('iframe');
-        iframeElement.classList.add('iframe_elementos');
-        iframeElement.setAttribute('src', 'elementos/elements-iframe.html');
-        iframeElement.setAttribute('title', 'Iframe');
-        iframeElement.setAttribute('scrolling', 'no');
-        iframeElement.setAttribute('loading', 'lazy');
-        
-        iframeElement.addEventListener('load', function() {
-            const iframeDoc = iframeElement.contentDocument || iframeElement.contentWindow.document;
-            const script = iframeDoc.createElement("script");
+        const linkIframe = iframeDoc.querySelector('.more-link');
+        console.log(linkIframe)
+
+        linkIframe.addEventListener("click", function(event){
             const params = new URLSearchParams();
-
-            params.set('numero', elementoSelecionado.firstElementChild.textContent);
-            iframeElement.contentWindow.postMessage({numero: elementoSelecionado.firstElementChild.textContent}, '*')
-            iframeDoc.body.appendChild(script); 
+            params.set('numero', elementoSelecionado.querySelector('.number').textContent);
+            event.target.setAttribute('href', `elements.html?${params.toString()}`);
         });
-        
-        divIframe.appendChild(iframeElement); 
-        elementoSelecionado.appendChild(divIframe);
-
-        const rect = divIframe.getBoundingClientRect();
-        if(rect.x < 10) {
-            divIframe.style.bottom = `calc(${rect.x} + 150px)`
-        }
     });
 });
