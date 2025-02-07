@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function (){
     });
 
     tabela.addEventListener("mouseover", function(event){ // Dinamiza os dados dos iframes para cada elemento
+
         const elementoSelecionado = event.target.closest(".element-data");
 
         const lastChild = elementoSelecionado.lastElementChild;
@@ -30,13 +31,13 @@ document.addEventListener("DOMContentLoaded", function (){
         iframeElement.setAttribute('src', 'elementos/elements-iframe.html');
         iframeElement.setAttribute('title', 'Iframe');
         iframeElement.setAttribute('scrolling', 'no');
-        iframeElement.setAttribute('loading', 'lazy')
+        iframeElement.setAttribute('loading', 'lazy');
         
         iframeElement.addEventListener('load', function() {
             const iframeDoc = iframeElement.contentDocument || iframeElement.contentWindow.document;
             const script = iframeDoc.createElement("script");
             const params = new URLSearchParams();
-            
+
             params.set('numero', elementoSelecionado.firstElementChild.textContent);
             iframeElement.contentWindow.postMessage({numero: elementoSelecionado.firstElementChild.textContent}, '*')
             iframeDoc.body.appendChild(script); 
@@ -44,5 +45,10 @@ document.addEventListener("DOMContentLoaded", function (){
         
         divIframe.appendChild(iframeElement); 
         elementoSelecionado.appendChild(divIframe);
+
+        const rect = divIframe.getBoundingClientRect();
+        if(rect.x < 10) {
+            divIframe.style.bottom = `calc(${rect.x} + 150px)`
+        }
     });
 });
