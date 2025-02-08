@@ -43,5 +43,5 @@ function preencherPagina(elemento) {
         console.error("Formato inesperado no campo Descoberta: ",descoberta);
     }
 
-    document.getElementById("historia").textContent = elemento["Texto2"] +  elemento["Texto3"]
+    document.getElementById("historia").textContent = `${elemento["Texto2"]} ${elemento["Texto3"]}`
 }
